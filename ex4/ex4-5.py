@@ -18,15 +18,15 @@ li = range(-10, 11)
 li = list(li)
 li.remove(0)
 
-sum_li = 0
+mysum = 0
 for i in li:
-    sum_li += i
-print(sum_li)
+    mysum += i
+print(mysum)
 
-product = 1
+myproduct = 1
 for i in li:
-    product *= i
-print(product)
+    myproduct *= i
+print(myproduct)
 
 from functools import reduce
-assert (mysum, myproduct) == (sum(numbers), reduce(lambda x,y: x*y, numbers))
+assert (0, 13168189440000) == (sum(li), reduce(lambda x,y: x*y, li))
